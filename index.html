@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-<script>if(!/[?&]pc\b/.test(location.search)&&matchMedia("(pointer:coarse)").matches&&Math.min(screen.width,screen.height)<820)location.replace("mobile.html");</script>
+<script>if(!/[?&]pc\b/.test(location.search)&&!matchMedia("(any-pointer:fine)").matches&&Math.min(screen.width,screen.height)<820)location.replace("mobile.html");</script>
 <title>Park Session</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Bangers&family=DM+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
@@ -188,7 +188,7 @@ kbd.big{font-size:20px;padding:6px 12px;min-width:48px;border-width:2px;border-b
       <button class="ride" id="rideBtn">RIDER <span><kbd>ENTRÉE</kbd> ↗</span></button>
     </div>
   </div>
-  <div class="foot"><button data-go="settings">Réglages</button><button data-go="help">Comment jouer</button><button data-go="recs">Records</button><button data-go="locker">Locker</button></div>
+  <div class="foot"><a href="mobile.html" style="color:inherit;padding:6px 2px;min-height:32px;display:inline-flex;align-items:center">Version téléphone</a><button data-go="settings">Réglages</button><button data-go="help">Comment jouer</button><button data-go="recs">Records</button><button data-go="locker">Locker</button></div>
 </div>
 
 <div id="parks">
